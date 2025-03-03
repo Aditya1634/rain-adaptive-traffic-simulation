@@ -1,0 +1,31 @@
+{
+  "simulation": {
+    "duration": 3600,
+    "step_length": 1.0,
+    "use_gui": true
+  },
+  "network": {
+    "osm_file": "data/input/map.osm",
+    "net_file": "data/input/network.net.xml"
+  },
+  "weather": {
+    "api_key": "YOUR_API_KEY",
+    "city": "London",
+    "update_interval": 300
+  },
+  "rain_adaptation": {
+    "enabled": true,
+    "speed_factors": {
+      "no_rain": 1.0,
+      "light_rain": 0.9,
+      "moderate_rain": 0.8,
+      "heavy_rain": 0.7
+    },
+    "pedestrian_factors": {
+      "no_rain": 1.0,
+      "light_rain": 1.2,
+      "moderate_rain": 1.5,
+      "heavy_rain": 1.8
+    }
+  }
+}
