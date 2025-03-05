@@ -1,0 +1,13 @@
+<!-- pedestrians.xml -->
+<routes>
+    <vType id="pedestrian" vClass="pedestrian" width="0.8" length="0.8" minGap="0.5" maxSpeed="1.5" guiShape="pedestrian"/>
+    
+    <person id="p0" depart="0" color="255,255,0">
+        <walk edges="1to2 2to3" departPos="80" arrivalPos="85"/>
+    </person>
+    
+    <!-- Generate multiple pedestrians with randomized attributes -->
+    <personFlow id="p_flow1" begin="0" end="3600" period="30">
+        <walk from="1to2" to="2to3" departPos="random" arrivalPos="random"/>
+    </personFlow>
+</routes>

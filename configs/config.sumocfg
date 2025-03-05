@@ -1,0 +1,9 @@
+<configuration>
+    <input>
+        <net-file value="data/input/network.net.xml"/>
+        <route-files value="data/input/routes.rou.xml"/>
+    </input>
+    <traci_server>
+        <port value="52340"/>
+    </traci_server>
+</configuration>

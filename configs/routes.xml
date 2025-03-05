@@ -1,0 +1,8 @@
+<!-- routes.xml -->
+<routes>
+    <vType id="car" accel="2.6" decel="4.5" sigma="0.5" length="5" minGap="2.5" maxSpeed="55.56" guiShape="passenger"/>
+    <vType id="bus" accel="1.2" decel="2.5" sigma="0.5" length="12" minGap="3.0" maxSpeed="30.0" guiShape="bus"/>
+    
+    <flow id="carflow1" type="car" begin="0" end="3600" number="1000" from="1to2" to="2to3"/>
+    <flow id="busflow1" type="bus" begin="0" end="3600" number="50" from="1to2" to="2to4"/>
+</routes>
