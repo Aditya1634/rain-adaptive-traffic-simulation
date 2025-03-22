@@ -1,0 +1,22 @@
+<configuration>
+    <input>
+        <!-- Path to network file -->
+        <net-file value="../data/network/trafalgar.net.xml"/>
+        
+        <!-- Path to baseline vehicle/pedestrian routes -->
+        <route-files value="../scenarios/baseline/vehicles.rou.xml,../scenarios/baseline/pedestrians.rou.xml"/>
+    </input>
+
+    <time>
+        <begin value="0"/>
+        <end value="3600"/> <!-- 1-hour simulation -->
+    </time>
+
+    <!-- Output files for baseline results -->
+    <output>
+        <tripinfo-output value="../output/baseline/tripinfo.xml"/>
+        <emission-output value="../output/baseline/emissions.xml"/>
+    </output>
+
+    
+</configuration>
