@@ -1,0 +1,22 @@
+<configuration>
+    <input>
+        <!-- Path to network file -->
+        <net-file value="../data/network/trafalgar.net.xml"/>
+        
+        <!-- Path to rain vehicle/pedestrian routes -->
+        <route-files value="../scenarios/rain/vehicles.rou.xml,../scenarios/rain/pedestrians.rou.xml"/>
+    </input>
+
+    <time>
+        <begin value="0"/>
+        <end value="3600"/> <!-- 1-hour simulation -->
+    </time>
+
+    <!-- Output files for rain results -->
+    <output>
+        <tripinfo-output value="../output/rain/tripinfo.xml"/>
+        <emission-output value="../output/rain/emissions.xml"/>
+    </output>
+
+    
+</configuration>
